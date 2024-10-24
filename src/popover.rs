@@ -41,7 +41,7 @@ impl PopoverController {
             let popover = NSPopover::new(mtm);
             popover.setBehavior(NSPopoverBehaviorTransient);
             popover.setContentSize(size);
-            popover.setHasFullSizeContent(true)
+            popover.setHasFullSizeContent(true);
             popover.setContentViewController(Some(ctrl.as_ref()));
 
             popover
